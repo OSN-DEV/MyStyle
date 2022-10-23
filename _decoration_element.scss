@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+h1 {
+    color: #515151;
+}
+
+h2 {
+    color: #616161;
+}
+
+h3 {
+    color: #858585;
+}
+
+h4, h5, h6 {
+    color: #333333;
+}
+
+p, li, dt, dd, td {
+    color: $text-color;
+}
+
+dt {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    caption {
+        color: #BDBDBD;
+    }
+    th, td {
+        border: solid 1px #E0E0E0;
+        padding: 0.2em 0.5em;
+    }
+    th {
+        background-color: #EEEEEE;
+    }
+}
+
+samp {
+    background-color: #333333;
+    color: white;
+}
+
+code {
+    background-color: #EEEEEE;
+}
+
+blockquote {
+    color: #858585;
+    border-left: solid 5px #EEEEEE;
+}
+
+figcaption {
+    color: #858585;
+}
+
+kbd {
+    font-style: italic;
+    font-family: 'Verdana';
+}
+
+aside {
+    background-color: #EFEFEF;
+}
+
+em {
+    font-weight: bold;
+}

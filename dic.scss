@@ -1,0 +1,36 @@
+﻿@charset "UTF-8";
+
+* {
+    font-family: 'MeiryoKe_Console', 'MeiryoKe_Gothic';
+}
+
+h1 {
+    font-size: 1.4em;
+    background-color: cadetblue;
+    color: white;
+    padding: 0.5em;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+h1 > a {
+    color: white;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1.1em;
+}
+h6 {
+    font-size: 1.0em;
+}

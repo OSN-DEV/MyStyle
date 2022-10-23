@@ -1,0 +1,601 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #333333;
+  font-family: 'Segoe UI', 'Meiryo UI', serif-ja, serif;
+  font-size: 0.94em;
+  letter-spacing: 0.07em;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+/*
+html, body, span, applet, object, iframe,
+, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+, dt, dd,, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+*/
+p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
+  margin-top: 1em;
+  font-size: 0.94em;
+}
+
+body {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.88em;
+  margin-top: 1.6em;
+  line-height: 1.28em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.598em;
+  margin-top: 1.6em;
+  line-height: 1.28em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.41em;
+  margin-top: 1.6em;
+  line-height: 1.28em;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.316em;
+  margin-top: 1.6em;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.128em;
+  margin-top: 1.6em;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 1.034em;
+  margin-top: 1.6em;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 2.25em;
+  margin-right: 2.25em;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 2.25em;
+  margin-right: 2.25em;
+}
+
+dt {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  margin-top: 0.4em;
+}
+
+dd {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+li {
+  margin-top: 0.4em;
+}
+
+caption {
+  font-size: 0.94em;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+blockquote {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  padding: 0.1em 0.5em 0.5em 0.5em;
+  font-style: italic;
+}
+
+code {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+sup {
+  font-size: 70%;
+  vertical-align: top;
+  position: relative;
+  top: -0.1em;
+}
+
+sub {
+  font-size: 70%;
+  vertical-align: bottom;
+  position: relative;
+  top: -0.1em;
+}
+
+aside {
+  padding: 0.5em 0.8em;
+}
+
+table {
+  table-layout: fixed;
+}
+
+table td {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  color: #515151;
+}
+
+h2 {
+  color: #616161;
+}
+
+h3 {
+  color: #858585;
+}
+
+h4, h5, h6 {
+  color: #333333;
+}
+
+p, li, dt, dd, td {
+  color: #333333;
+}
+
+dt {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+}
+table caption {
+  color: #BDBDBD;
+}
+table th, table td {
+  border: solid 1px #E0E0E0;
+  padding: 0.2em 0.5em;
+}
+table th {
+  background-color: #EEEEEE;
+}
+
+samp {
+  background-color: #333333;
+  color: white;
+}
+
+code {
+  background-color: #EEEEEE;
+}
+
+blockquote {
+  color: #858585;
+  border-left: solid 5px #EEEEEE;
+}
+
+figcaption {
+  color: #858585;
+}
+
+kbd {
+  font-style: italic;
+  font-family: 'Verdana';
+}
+
+aside {
+  background-color: #EFEFEF;
+}
+
+em {
+  font-weight: bold;
+}
+
+body > *:first-child {
+  margin-top: 1em;
+}
+
+body > section > h1:first-child, body > section > h2:first-child, body > section > h3:first-child {
+  margin-top: 0;
+}
+
+main > h1, section > h1 {
+  margin-top: 0;
+}
+
+section > h2, section > h3, section {
+  margin-top: 1.5em;
+}
+
+h1 + h2, h2 + h3 {
+  margin-top: 0.5em;
+}
+
+h1 + section > h2,
+h2 + section > h3,
+h3 + section > h4,
+h4 + section > h5,
+h5 + section > h6 {
+  margin-top: 0.5em;
+}
+
+h1 + *, h2 + *, h3 + * {
+  margin-top: 0.8em;
+}
+
+h4 + * {
+  margin-top: 0.5em;
+}
+
+h5 + *, h6 + * {
+  margin-top: 0.3em;
+}
+
+dd > p:first-child {
+  margin-top: 0;
+}
+
+/*
+p + ul,ol {
+    margin-top: $top-margin * 0.4;
+}
+*/
+pre samp, pre code {
+  display: block;
+  font-family: 'consolas', 'Meiryo UI';
+  padding: 1em 1em;
+  overflow-x: auto;
+  overflow-wrap: break-word;
+}
+
+li ol, li ul, li dl {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+aside table {
+  border: none;
+  border-collapse: unset;
+  font-size: 0.846em;
+  color: #546E7A;
+}
+aside table th, aside table td {
+  background-color: transparent;
+  border: none;
+}
+
+aside > *:first-child {
+  margin-top: 0em;
+}
+
+blockquote > *:first-child {
+  margin-top: 0.5em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+  font-family: 'Meiryo UI Italic';
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.mt-00 {
+  margin-top: 0;
+}
+
+.mt-05 {
+  margin-top: 0.5em;
+}
+
+.mt-10 {
+  margin-top: 1em;
+}
+
+.mt-15 {
+  margin-top: 1.5em;
+}
+
+.mb-00 {
+  margin-bottom: 0;
+}
+
+.mb-05 {
+  margin-bottom: 0.5em;
+}
+
+.mb-10 {
+  margin-bottom: 1em;
+}
+
+.mb-15 {
+  margin-bottom: 1.5em;
+}
+
+.ml-00 {
+  margin-left: 0;
+}
+
+.ml-05 {
+  margin-left: 0.5em;
+}
+
+.ml-10 {
+  margin-left: 1em;
+}
+
+.ml-20 {
+  margin-left: 2em;
+}
+
+.ml-30 {
+  margin-left: 3em;
+}
+
+.indent-000 {
+  text-indent: 0;
+}
+
+div.line-spacer {
+  height: 0.5em;
+  margin: 0;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.gray-f {
+  color: #BDBDBD;
+}
+
+.blue-f {
+  color: #1565C0;
+}
+
+.white-f {
+  color: #ffffff;
+}
+
+.comment {
+  color: #4CAF50;
+}
+
+.lst-no-mark {
+  list-style-type: none;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.lst-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lst-lower-roman {
+  list-style-type: lower-roman;
+}
+
+.lst-zero-decimal {
+  list-style-type: decimal-leading-zero;
+}
+
+.note, .caution, .tips, .warn {
+  background-color: #E1F5FE;
+  padding: 1em;
+  margin-top: 1.6em;
+}
+.note > *:first-child, .caution > *:first-child, .tips > *:first-child, .warn > *:first-child {
+  margin-top: 0;
+}
+.note h5, .caution h5, .tips h5, .warn h5 {
+  font-size: 11pt;
+  margin-top: 1em;
+}
+.note h5 + p, .caution h5 + p, .tips h5 + p, .warn h5 + p {
+  margin-top: 0.3em;
+}
+.note p, .caution p, .tips p, .warn p {
+  margin-top: 0.5em;
+}
+.note code, .caution code, .tips code, .warn code {
+  background-color: #F3F8FE;
+}
+.note a, .caution a, .tips a, .warn a {
+  font-weight: bold;
+}
+
+.note {
+  background-color: #E1F5FE;
+  color: #01579B;
+}
+.note p, .note h5, .note li {
+  color: #01579B;
+}
+
+.caution {
+  background-color: #FEEFE3;
+  color: #BF360C;
+}
+.caution p, .caution h5, .caution li {
+  color: #BF360C;
+}
+
+.tips {
+  background-color: rgba(0, 164, 0, 0.15);
+  color: #003100;
+}
+.tips p, .tips h5, .tips li {
+  color: #003100;
+}
+
+.warn {
+  background-color: #FFF8E6;
+  color: #003100;
+}
+.warn p, .warn h5, .warn li {
+  color: #4D3800;
+}
+.warn code {
+  background-color: #FFEFC4;
+}
+
+div.link-box {
+  background-color: #F5F5F5;
+  border: solid 1px #999999;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+}
+
+.break-word {
+  word-wrap: break-word;
+}

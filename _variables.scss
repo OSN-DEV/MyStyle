@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------------
+// text
+// --------------------------------------------------------------------------------
+// px	em
+// 13px	0.81em
+// 14px	0.88em
+// 15px	0.94em
+// 16px	1em
+// 17px	1.06em
+$font-color-base		: #333333;
+$font-size-base			: 0.94em;	// ニュース系は16px、ブログ系は14pxが多い
+$letter-spacing-base	: 0.07em;	// 文字の半分から１文字分の間
+$line-height-base		: 1.6em;	// フォントサイズの1.5倍が目安
+$margin-base			: $line-height-base;
+$side-margin			: 1.5em;
+$top-margin				: 1em;      // Tag間のマージン
+
+// --------------------------------------------------------------------------------
+// Material Color Definition
+// --------------------------------------------------------------------------------
+$text-color             : #333333;
+
+// --------------------------------------------------------------------------------
+// Material Color Definition
+// --------------------------------------------------------------------------------
+// [Red]
+$mcd-color-red-050		: #FFEBEE;
+$mcd-color-red-100		: #FFCDD2;
+$mcd-color-red-200		: #EF9A9A;
+$mcd-color-red-300		: #E57373;
+$mcd-color-red-400		: #EF5350;
+$mcd-color-red-500		: #F44336;
+$mcd-color-red-600		: #E53935;
+$mcd-color-red-700		: #D32F2F;
+$mcd-color-red-800		: #C62828;
+$mcd-color-red-900		: #B71C1C;
+$mcd-color-red-A100		: #FF8A80;
+$mcd-color-red-A200		: #FF5252;
+$mcd-color-red-A400		: #FF1744;
+$mcd-color-red-A700		: #D50000;
+
+// [Pink]
+$mcd-color-pink-050		: #FCE4EC;
+$mcd-color-pink-100		: #F8BBD0;
+$mcd-color-pink-200		: #F48FB1;
+$mcd-color-pink-300		: #F06292;
+$mcd-color-pink-400		: #EC407A;
+$mcd-color-pink-500		: #E91E63;
+$mcd-color-pink-600		: #D81B60;
+$mcd-color-pink-700		: #C2185B;
+$mcd-color-pink-800		: #AD1457;
+$mcd-color-pink-900		: #880E4F;
+$mcd-color-pink-A100	: #FF80AB;
+$mcd-color-pink-A200	: #FF4081;
+$mcd-color-pink-A400	: #F50057;
+$mcd-color-pink-A700	: #C51162;
+
+// [Purple ]
+$mcd-color-purple-050		: #F3E5F5;
+$mcd-color-purple-100		: #E1BEE7;
+$mcd-color-purple-200		: #CE93D8;
+$mcd-color-purple-300		: #BA68C8;
+$mcd-color-purple-400		: #AB47BC;
+$mcd-color-purple-500		: #9C27B0;
+$mcd-color-purple-600		: #8E24AA;
+$mcd-color-purple-700		: #7B1FA2;
+$mcd-color-purple-800		: #6A1B9A;
+$mcd-color-purple-900		: #4A148C;
+$mcd-color-purple-A100		: #EA80FC;
+$mcd-color-purple-A200		: #E040FB;
+$mcd-color-purple-A400		: #D500F9;
+$mcd-color-purple-A700		: #AA00FF;
+
+// [Deep purple ]
+$mcd-color-deep-purple-050	: #EDE7F6;
+$mcd-color-deep-purple-100	: #D1C4E9;
+$mcd-color-deep-purple-200	: #B39DDB;
+$mcd-color-deep-purple-300	: #9575CD;
+$mcd-color-deep-purple-400	: #7E57C2;
+$mcd-color-deep-purple-500	: #673AB7;
+$mcd-color-deep-purple-600	: #5E35B1;
+$mcd-color-deep-purple-700	: #512DA8;
+$mcd-color-deep-purple-800	: #4527A0;
+$mcd-color-deep-purple-900	: #311B92;
+$mcd-color-deep-purple-A100	: #B388FF;
+$mcd-color-deep-purple-A200	: #7C4DFF;
+$mcd-color-deep-purple-A400	: #651FFF;
+$mcd-color-deep-purple-A700	: #6200EA;
+
+// [Indigo]
+$mcd-color-Indigo-050		: #E8EAF6;
+$mcd-color-Indigo-100		: #C5CAE9;
+$mcd-color-Indigo-200		: #9FA8DA;
+$mcd-color-Indigo-300		: #7986CB;
+$mcd-color-Indigo-400		: #5C6BC0;
+$mcd-color-Indigo-500		: #3F51B5;
+$mcd-color-Indigo-600		: #3949AB;
+$mcd-color-Indigo-700		: #303F9F;
+$mcd-color-Indigo-800		: #283593;
+$mcd-color-Indigo-900		: #1A237E;
+$mcd-color-Indigo-A100		: #8C9EFF;
+$mcd-color-Indigo-A200		: #536DFE;
+$mcd-color-Indigo-A400		: #3D5AFE;
+$mcd-color-Indigo-A700		: #304FFE;
+
+// [Blue]
+$mcd-color-blue-050			: #E3F2FD;
+$mcd-color-blue-100			: #BBDEFB;
+$mcd-color-blue-200			: #90CAF9;
+$mcd-color-blue-300			: #64B5F6;
+$mcd-color-blue-400			: #42A5F5;
+$mcd-color-blue-500			: #2196F3;
+$mcd-color-blue-600			: #1E88E5;
+$mcd-color-blue-700			: #1976D2;
+$mcd-color-blue-800			: #1565C0;
+$mcd-color-blue-900			: #0D47A1;
+$mcd-color-blue-A100		: #82B1FF;
+$mcd-color-blue-A200		: #448AFF;
+$mcd-color-blue-A400		: #2979FF;
+$mcd-color-blue-A700		: #2962FF;
+
+// [Light Blue]
+$mcd-color-light-blue-050	: #E1F5FE;
+$mcd-color-light-blue-100	: #B3E5FC;
+$mcd-color-light-blue-200	: #81D4FA;
+$mcd-color-light-blue-300	: #4FC3F7;
+$mcd-color-light-blue-400	: #29B6F6;
+$mcd-color-light-blue-500	: #03A9F4;
+$mcd-color-light-blue-600	: #039BE5;
+$mcd-color-light-blue-700	: #0288D1;
+$mcd-color-light-blue-800	: #0277BD;
+$mcd-color-light-blue-900	: #01579B;
+$mcd-color-light-blue-A100	: #80D8FF;
+$mcd-color-light-blue-A200	: #40C4FF;
+$mcd-color-light-blue-A400	: #00B0FF;
+$mcd-color-light-blue-A700	: #0091EA;
+
+// [Cyan]
+$mcd-color-cyan-050			: #E0F7FA;
+$mcd-color-cyan-100			: #B2EBF2;
+$mcd-color-cyan-200			: #80DEEA;
+$mcd-color-cyan-300			: #4DD0E1;
+$mcd-color-cyan-400			: #26C6DA;
+$mcd-color-cyan-500			: #00BCD4;
+$mcd-color-cyan-600			: #00ACC1;
+$mcd-color-cyan-700			: #0097A7;
+$mcd-color-cyan-800			: #00838F;
+$mcd-color-cyan-900			: #006064;
+$mcd-color-cyan-A100		: #84FFFF;
+$mcd-color-cyan-A200		: #18FFFF;
+$mcd-color-cyan-A400		: #00E5FF;
+$mcd-color-cyan-A700		: #00B8D4;
+
+// [Teal]
+$mcd-color-teal-050			: #e0f2f1;
+$mcd-color-teal-100			: #b2dfdb;
+$mcd-color-teal-200			: #80cbc4;
+$mcd-color-teal-300			: #4db6ac;
+$mcd-color-teal-400			: #26a69a;
+$mcd-color-teal-500			: #009688;
+$mcd-color-teal-600			: #00897b;
+$mcd-color-teal-700			: #00796b;
+$mcd-color-teal-800			: #00695c;
+$mcd-color-teal-900			: #004d40;
+$mcd-color-teal-A100		: #a7ffeb;
+$mcd-color-teal-A200		: #64ffda;
+$mcd-color-teal-A400		: #1de9b6;
+$mcd-color-teal-A700		: #00bfa5;
+
+// [Green]
+$mcd-color-green-050		: #E8F5E9;
+$mcd-color-green-100		: #C8E6C9;
+$mcd-color-green-200		: #A5D6A7;
+$mcd-color-green-300		: #81C784;
+$mcd-color-green-400		: #66BB6A;
+$mcd-color-green-500		: #4CAF50;
+$mcd-color-green-600		: #43A047;
+$mcd-color-green-700		: #388E3C;
+$mcd-color-green-800		: #2E7D32;
+$mcd-color-green-900		: #1B5E20;
+$mcd-color-green-A100		: #B9F6CA;
+$mcd-color-green-A200		: #69F0AE;
+$mcd-color-green-A400		: #00E676;
+$mcd-color-green-A700		: #00C853;
+
+// [Lgith Green]
+$mcd-color-light-green-050	: #F1F8E9;
+$mcd-color-light-green-100	: #DCEDC8;
+$mcd-color-light-green-200	: #C5E1A5;
+$mcd-color-light-green-300	: #AED581;
+$mcd-color-light-green-400	: #9CCC65;
+$mcd-color-light-green-500	: #8BC34A;
+$mcd-color-light-green-600	: #7CB342;
+$mcd-color-light-green-700	: #689F38;
+$mcd-color-light-green-800	: #558B2F;
+$mcd-color-light-green-900	: #33691E;
+$mcd-color-light-green-A100	: #CCFF90;
+$mcd-color-light-green-A200	: #B2FF59;
+$mcd-color-light-green-A400	: #76FF03;
+$mcd-color-light-green-A700	: #64DD17;
+
+// [Lime]
+$mcd-color-lime-050			: #F9FBE7;
+$mcd-color-lime-100			: #F0F4C3;
+$mcd-color-lime-200			: #E6EE9C;
+$mcd-color-lime-300			: #DCE775;
+$mcd-color-lime-400			: #D4E157;
+$mcd-color-lime-500			: #CDDC39;
+$mcd-color-lime-600			: #C0CA33;
+$mcd-color-lime-700			: #AFB42B;
+$mcd-color-lime-800			: #9E9D24;
+$mcd-color-lime-900			: #827717;
+$mcd-color-lime-A100		: #F4FF81;
+$mcd-color-lime-A200		: #EEFF41;
+$mcd-color-lime-A400		: #C6FF00;
+$mcd-color-lime-A700		: #AEEA00;
+
+// [Yellow]
+$mcd-color-yellow-050		: #FFFDE7;
+$mcd-color-yellow-100		: #FFF9C4;
+$mcd-color-yellow-200		: #FFF59D;
+$mcd-color-yellow-300		: #FFF176;
+$mcd-color-yellow-400		: #FFEE58;
+$mcd-color-yellow-500		: #FFEB3B;
+$mcd-color-yellow-600		: #FDD835;
+$mcd-color-yellow-700		: #FBC02D;
+$mcd-color-yellow-800		: #F9A825;
+$mcd-color-yellow-900		: #F57F17;
+$mcd-color-yellow-A100		: #FFFF8D;
+$mcd-color-yellow-A200		: #FFFF00;
+$mcd-color-yellow-A400		: #FFEA00;
+$mcd-color-yellow-A700		: #FFD600;
+
+// [Orange]
+$mcd-color-orange-050		: #FFF3E0;
+$mcd-color-orange-100		: #FFE0B2;
+$mcd-color-orange-200		: #FFCC80;
+$mcd-color-orange-300		: #FFB74D;
+$mcd-color-orange-400		: #FFA726;
+$mcd-color-orange-500		: #FF9800;
+$mcd-color-orange-600		: #FB8C00;
+$mcd-color-orange-700		: #F57C00;
+$mcd-color-orange-800		: #EF6C00;
+$mcd-color-orange-900		: #E65100;
+$mcd-color-orange-A100		: #FFD180;
+$mcd-color-orange-A200		: #FFAB40;
+$mcd-color-orange-A400		: #FF9100;
+$mcd-color-orange-A700		: #FF6D00;
+
+// [Deep Orange]
+$mcd-color-deep-orange-050	: #FBE9E7;
+$mcd-color-deep-orange-100	: #FFCCBC;
+$mcd-color-deep-orange-200	: #FFAB91;
+$mcd-color-deep-orange-300	: #FF8A65;
+$mcd-color-deep-orange-400	: #FF7043;
+$mcd-color-deep-orange-500	: #FF5722;
+$mcd-color-deep-orange-600	: #F4511E;
+$mcd-color-deep-orange-700	: #E64A19;
+$mcd-color-deep-orange-800	: #D84315;
+$mcd-color-deep-orange-900	: #BF360C;
+$mcd-color-deep-orange-A100	: #FF9E80;
+$mcd-color-deep-orange-A200	: #FF6E40;
+$mcd-color-deep-orange-A400	: #FF3D00;
+$mcd-color-deep-orange-A700	: #DD2C00;
+
+// [Brown]
+$mcd-color-brown-050		: #EFEBE9;
+$mcd-color-brown-100		: #D7CCC8;
+$mcd-color-brown-200		: #A1887F;
+$mcd-color-brown-300		: #A1887F;
+$mcd-color-brown-400		: #8D6E63;
+$mcd-color-brown-500		: #795548;
+$mcd-color-brown-600		: #6D4C41;
+$mcd-color-brown-700		: #5D4037;
+$mcd-color-brown-800		: #4E342E;
+$mcd-color-brown-900		: #3E2723;
+
+// [Gray]
+$mcd-color-gray-050			: #FAFAFA;
+$mcd-color-gray-100			: #F5F5F5;
+$mcd-color-gray-200			: #EEEEEE;
+$mcd-color-gray-300			: #E0E0E0;
+$mcd-color-gray-400			: #BDBDBD;
+$mcd-color-gray-500			: #9E9E9E;
+$mcd-color-gray-600			: #757575;
+$mcd-color-gray-700			: #616161;
+$mcd-color-gray-800			: #424242;
+$mcd-color-gray-900			: #212121;
+
+// [Blue Gray]
+$mcd-color-blue-gray-050	: #ECEFF1;
+$mcd-color-blue-gray-100	: #CFD8DC;
+$mcd-color-blue-gray-200	: #B0BEC5;
+$mcd-color-blue-gray-300	: #90A4AE;
+$mcd-color-blue-gray-400	: #78909C;
+$mcd-color-blue-gray-500	: #607D8B;
+$mcd-color-blue-gray-600	: #546E7A;
+$mcd-color-blue-gray-700	: #455A64;
+$mcd-color-blue-gray-800	: #37474F;
+$mcd-color-blue-gray-900	: #263238;
+
+// [Current Theme]
+$mcd-color-050		: $mcd-color-gray-050;
+$mcd-color-100		: $mcd-color-gray-100;
+$mcd-color-200		: $mcd-color-gray-200;
+$mcd-color-300		: $mcd-color-gray-300;
+$mcd-color-400		: $mcd-color-gray-400;
+$mcd-color-500		: $mcd-color-gray-500;
+$mcd-color-600		: $mcd-color-gray-600;
+$mcd-color-700		: $mcd-color-gray-700;
+$mcd-color-800		: $mcd-color-gray-800;
+$mcd-color-900		: $mcd-color-gray-900;
+$mcd-color-A100		: $mcd-color-Indigo-A100;
+$mcd-color-A200		: $mcd-color-Indigo-A200;
+$mcd-color-A400		: $mcd-color-Indigo-A400;
+$mcd-color-A700		: $mcd-color-Indigo-A700;
+
+$mcd-color-title	: #FFFFFF;
+
+// --------------------------------------------------------------------------------
+// Others
+// --------------------------------------------------------------------------------
