@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-body {
-	color				: $font-color-base;
-	font-family			: 'Segoe UI', 'Meiryo UI', serif-ja, serif;
-	font-size			: $font-size-base;
-	letter-spacing		: $letter-spacing-base;
-	line-height			: $line-height-base;
-    margin-bottom		: $margin-base;
-}
-
 /*
 html, body, span, applet, object, iframe,
 , blockquote, pre,
@@ -25,47 +16,62 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video
 */
 
-@mixin header($fontSize:1, $marginTop:1) {
-	font-weight			: bold;
-	font-size			: $font-size-base * $fontSize;
-	margin-top			: $margin-base * $marginTop;
-}
-@mixin marginTLR($t:-1, $l:-1, $r:-1) {
-    @if -1 < $t { margin-top: $t; }
-    @if -1 < $l { margin-left: $l; }
-    @if -1 < $r { margin-right: $r; }
-}
-@mixin marginSameLR($margin) {
-    margin-left: $margin;
-    margin-right: $margin;
-}
 @mixin marginLR($l:-1, $r:-1) {
     margin-left: $l;
     margin-right: $r;
 }
 
-p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
-    margin-top: $top-margin;
-    font-size: $font-size-base;
+@mixin marginSameLR($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+@mixin header($fontSize:1, $marginTop:1) {
+	font-weight			: bold;
+	font-size			: $font-size-base * $fontSize;
+	margin-top			: $margin-base * $marginTop;
 }
 
 body {
-    @include marginSameLR($side-margin);
+	color				    : $font-color-base;
+	font-family			: 'Segoe UI', 'Meiryo UI', serif-ja, serif;
+	font-size			  : $font-size-base;
+	letter-spacing	: $letter-spacing-base;
+	line-height			: $line-height-base;
+  margin-bottom		: $margin-base;
+}
+
+p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
+  margin-top: $top-margin;
+  @include marginSameLR($side-margin);
+}
+
+section {
+  margin-top: 0em;
 }
 
 h1 {
-    @include header(2, 1);
-    line-height			: $line-height-base * 0.8;
+  color: $color-primary-fg;
+  background-color: $color-primary-bg;
+  padding: 12px 20px;
+  @include header(2, 1.1);
+  @include marginSameLR($side-margin * (0));
 }
 
 h2 {
-    @include header(1.7, 1);
-    line-height			: $line-height-base * 0.8;
+  @include header(1.7, 1);
+  line-height			: $line-height-base * 0.8;
+  background-color: $color-primary-light-bg;
+  padding: 10px 20px;
+  @include marginSameLR($side-margin * (0));
 }
 
 h3 {
-    @include header(1.5, 1); 
-    line-height			: $line-height-base * 0.8;
+  @include header(1.5, 1); 
+  line-height : $line-height-base * 0.8;
+  color: $color-primary-bg;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 h4 {
@@ -80,40 +86,14 @@ h6 {
     @include header(1.1, 1); 
 }
 
-ul {
-    list-style-type: square;
-     @include marginSameLR($side-margin * 1.5);
-}
-
-ol {
-    list-style-type: decimal;
-     @include marginSameLR($side-margin * 1.5);
-}
-
 dt {
-     @include marginSameLR($side-margin * 0.5);
-    margin-top: 0.4em;
+  font-weight: 600;
+  @include marginSameLR($side-margin * 0.5);
+  margin-top: 0.4em;
 }
 
 dd {
-     @include marginSameLR($side-margin);
-}
-
-li {
-    margin-top: 0.4em;
-}
-
-caption {
-    font-size			: $font-size-base;
-}
-
-main {
-    display: block;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+  @include marginSameLR($side-margin);
 }
 
 em {
@@ -124,43 +104,115 @@ strong {
   font-weight: bold;
 }
 
-pre {
-    white-space: pre-wrap ;
-}
-
-blockquote {
-    @include marginSameLR(0.1em);
-    padding: 0.1em 0.5em 0.5em 0.5em;
-    font-style: italic;
-}
-
 code {
-    @include marginSameLR(0.1em);
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+  @include marginSameLR(0.1em);
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  background-color: #EEEEEE;
 }
 
-sup {
-	font-size: 70%;
-	vertical-align: top;
-	position: relative;
-	top: -0.1em;
+figcaption {
+  color: #858585;
 }
 
-sub {
-	font-size: 70%;
-	vertical-align: bottom;
-	position: relative;
-	top: -0.1em;
-}
-aside {
-    padding:0.5em 0.8em;
-}
 
-table {
-    table-layout: fixed; 
-}
+// @mixin marginTLR($t:-1, $l:-1, $r:-1) {
+//     @if -1 < $t { margin-top: $t; }
+//     @if -1 < $l { margin-left: $l; }
+//     @if -1 < $r { margin-right: $r; }
+// }
 
-table td {
-  overflow-wrap : anywhere;
-}
+// p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
+//     margin-top: $top-margin;
+//     font-size: $font-size-base;
+// }
+
+// body {
+//     @include marginSameLR($side-margin);
+// }
+
+
+// ul {
+//     list-style-type: square;
+//      @include marginSameLR($side-margin * 1.5);
+// }
+
+// ol {
+//     list-style-type: decimal;
+//      @include marginSameLR($side-margin * 1.5);
+// }
+
+// dt {
+//      @include marginSameLR($side-margin * 0.5);
+//     margin-top: 0.4em;
+// }
+
+// dd {
+//      @include marginSameLR($side-margin);
+// }
+
+// li {
+//     margin-top: 0.4em;
+// }
+
+// caption {
+//     font-size			: $font-size-base;
+// }
+
+// main {
+//     display: block;
+// }
+
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }
+
+// em {
+//   font-style: italic;
+// }
+
+// strong {
+//   font-weight: bold;
+// }
+
+// pre {
+//     white-space: pre-wrap ;
+// }
+
+// blockquote {
+//     @include marginSameLR(0.1em);
+//     padding: 0.1em 0.5em 0.5em 0.5em;
+//     font-style: italic;
+// }
+
+// code {
+//     @include marginSameLR(0.1em);
+//     padding-left: 0.2em;
+//     padding-right: 0.2em;
+// }
+
+// sup {
+// 	font-size: 70%;
+// 	vertical-align: top;
+// 	position: relative;
+// 	top: -0.1em;
+// }
+
+// sub {
+// 	font-size: 70%;
+// 	vertical-align: bottom;
+// 	position: relative;
+// 	top: -0.1em;
+// }
+// aside {
+//     padding:0.5em 0.8em;
+// }
+
+// table {
+//     table-layout: fixed; 
+// }
+
+// table td {
+//   overflow-wrap : anywhere;
+// }

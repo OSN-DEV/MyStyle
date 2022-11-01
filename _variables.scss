@@ -9,18 +9,32 @@
 // 15px	0.94em
 // 16px	1em
 // 17px	1.06em
-$font-color-base		: #333333;
-$font-size-base			: 0.94em;	// ニュース系は16px、ブログ系は14pxが多い
+$font-color-base		  : #333333;
+$font-size-base			  : 0.94em;	// ニュース系は16px、ブログ系は14pxが多い
 $letter-spacing-base	: 0.07em;	// 文字の半分から１文字分の間
-$line-height-base		: 1.6em;	// フォントサイズの1.5倍が目安
-$margin-base			: $line-height-base;
-$side-margin			: 1.5em;
-$top-margin				: 1em;      // Tag間のマージン
+$line-height-base		  : 1.6em;	// フォントサイズの1.5倍が目安
+$margin-base			    : $line-height-base;
+$side-margin			    : 1.5em;
+$top-margin				    : 1em;      // Tag間のマージン
 
 // --------------------------------------------------------------------------------
-// Material Color Definition
+// Default Color
 // --------------------------------------------------------------------------------
-$text-color             : #333333;
+// https://m2.material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=00838F
+$color-primary-bg : #00838f;
+$color-primary-fg : #ffffff;
+$color-primary-light-bg : #4fb3bf;
+$color-primary-light-fg : #64000000;
+$color-primary-dark-bg: #005662;
+$color-primary-dark-fg: #65ffffff;
+
+$color-secondary-bg : #ffe082;
+$color-secondary-fg : #55000000;
+$color-secondary-light-bg : #ffffb3;
+$color-secondary-light-fg : #54000000;
+$color-secondary-dark-bg: #caae53;
+$color-secondary-dark-fg: #62000000;
+
 
 // --------------------------------------------------------------------------------
 // Material Color Definition
@@ -316,8 +330,6 @@ $mcd-color-A100		: $mcd-color-Indigo-A100;
 $mcd-color-A200		: $mcd-color-Indigo-A200;
 $mcd-color-A400		: $mcd-color-Indigo-A400;
 $mcd-color-A700		: $mcd-color-Indigo-A700;
-
-$mcd-color-title	: #FFFFFF;
 
 // --------------------------------------------------------------------------------
 // Others

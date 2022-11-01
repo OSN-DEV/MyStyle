@@ -3,55 +3,17 @@
 // tag1 tag2 孫まで適用
 // tag1>tag2 子まで適用
 // tag1+tag2 同じ階層の隣接するタグのみ
-body > *:first-child {
-  margin-top  : 1em;
-}
 
-body > section > h1:first-child, body > section > h2:first-child, body > section > h3:first-child {
+body > section:first-child,
+body > section:first-child > h1:first-child,
+body > section > h2:first-child, 
+body > section > h3:first-child {
   margin-top  : 0;
-}
-
-main > h1, section > h1 {
-  margin-top  : 0;
-}
-
-section > h2, section > h3, section {
-    margin-top: $top-margin * 1.5;
-}
-
-h1 + h2, h2 + h3 {
-    margin-top: $top-margin * 0.5;
-}
-
-h1 + section > h2, 
-h2 + section > h3,
-h3 + section > h4,
-h4 + section > h5,
-h5 + section > h6 {
-    margin-top: $top-margin * 0.5;
-}
-
-h1+*, h2+*, h3+*{
-    margin-top: $top-margin * 0.8;
-}
-
-h4+* {
-    margin-top: $top-margin * 0.5;
-}
-
-h5+*, h6+* {
-    margin-top: $top-margin * 0.3;
 }
 
 dd > p:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
-
-/*
-p + ul,ol {
-    margin-top: $top-margin * 0.4;
-}
-*/
 
 pre {
     samp, code {
@@ -61,31 +23,90 @@ pre {
         overflow-x: auto;
         overflow-wrap: break-word;
     }
-}
-
-li ol, li ul, li dl {
-	margin-top			: 0;
-	margin-bottom		: $margin-base / 2;
-}
-
-
-aside {
-    table {
-        border: none;
-        border-collapse:unset;
-        font-size			: $font-size-base * 0.9;
-        color:$mcd-color-blue-gray-600;
-        th, td {
-            background-color: transparent;
-            border: none;
-        }
+    samp {
+      background-color: #333333;
+      color: #ffffff;
+    }
+    code {
+      background-color: #33333333;
     }
 }
 
-aside > *:first-child {
-    margin-top:0em;
-}
 
-blockquote > *:first-child {
-    margin-top:0.5em;
-}
+// body > *:first-child {
+//   margin-top  : 1em;
+// }
+
+// body > section > h1:first-child, body > section > h2:first-child, body > section > h3:first-child {
+//   margin-top  : 0;
+// }
+
+// main > h1, section > h1 {
+//   margin-top  : 0;
+// }
+
+// section > h2, section > h3, section {
+//     margin-top: $top-margin * 1.5;
+// }
+
+// h1 + h2, h2 + h3 {
+//     margin-top: $top-margin * 0.5;
+// }
+
+// h1 + section > h2, 
+// h2 + section > h3,
+// h3 + section > h4,
+// h4 + section > h5,
+// h5 + section > h6 {
+//     margin-top: $top-margin * 0.5;
+// }
+
+// h1+*, h2+*, h3+*{
+//     margin-top: $top-margin * 0.8;
+// }
+
+// h4+* {
+//     margin-top: $top-margin * 0.5;
+// }
+
+// h5+*, h6+* {
+//     margin-top: $top-margin * 0.3;
+// }
+
+// dd > p:first-child {
+//     margin-top: 0;
+// }
+
+// /*
+// p + ul,ol {
+//     margin-top: $top-margin * 0.4;
+// }
+// */
+
+
+// li ol, li ul, li dl {
+// 	margin-top			: 0;
+// 	margin-bottom		: $margin-base / 2;
+// }
+
+
+// aside {
+//     table {
+//         border: none;
+//         border-collapse:unset;
+//         font-size			: $font-size-base * 0.9;
+//         color:$mcd-color-blue-gray-600;
+//         th, td {
+//             background-color: transparent;
+//             border: none;
+//         }
+//     }
+// }
+
+// aside > *:first-child {
+//     margin-top:0em;
+// }
+
+// blockquote > *:first-child {
+//     margin-top:0.5em;
+// }
