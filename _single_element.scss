@@ -33,12 +33,12 @@ time, mark, audio, video
 }
 
 body {
-	color				    : $font-color-base;
-	font-family			: 'Segoe UI', 'Meiryo UI', serif-ja, serif;
-	font-size			  : $font-size-base;
-	letter-spacing	: $letter-spacing-base;
-	line-height			: $line-height-base;
-  margin-bottom		: $margin-base;
+  color           : $font-color-base;
+  font-family     : 'Segoe UI', 'Meiryo UI', serif-ja, serif;
+  font-size       : $font-size-base;
+  letter-spacing  : $letter-spacing-base;
+  line-height     : $line-height-base;
+  margin-bottom   : $margin-base;
 }
 
 p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
@@ -75,15 +75,45 @@ h3 {
 }
 
 h4 {
-    @include header(1.4, 1); 
+  @include header(1.4, 1); 
+  @include marginSameLR($side-margin * 0.8);
 }
 
 h5 {
-    @include header(1.2, 1); 
+  @include header(1.2, 1); 
+  @include marginSameLR($side-margin);
 }
 
 h6 {
-    @include header(1.1, 1); 
+  @include header(1.1, 1); 
+  @include marginSameLR($side-margin * 0.8);
+}
+
+table {
+    border-collapse: collapse;
+    caption {
+        color: #BDBDBD;
+    }
+    th, td {
+        border: solid 1px #E0E0E0;
+        padding: 0.2em 0.5em;
+    }
+    th {
+        background-color: #EEEEEE;
+    }
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-top: 0.4em;
+  @include marginSameLR($side-margin * 1);
 }
 
 dt {
@@ -104,7 +134,7 @@ strong {
   font-weight: bold;
 }
 
-code {
+code, kbd {
   @include marginSameLR(0.1em);
   padding-left: 0.2em;
   padding-right: 0.2em;
@@ -115,45 +145,38 @@ figcaption {
   color: #858585;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-// @mixin marginTLR($t:-1, $l:-1, $r:-1) {
-//     @if -1 < $t { margin-top: $t; }
-//     @if -1 < $l { margin-left: $l; }
-//     @if -1 < $r { margin-right: $r; }
-// }
+hr {
+  margin-top: 1em;
+  border: none;
+}
 
-// p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
-//     margin-top: $top-margin;
-//     font-size: $font-size-base;
-// }
+blockquote {
+  @include marginSameLR($side-margin * 1.6);
+  padding: 0.1em 0.5em 0.5em 0.5em;
+  font-style: italic;
+  color: #666666;
+}
 
-// body {
-//     @include marginSameLR($side-margin);
-// }
+sup {
+	font-size: 70%;
+	vertical-align: top;
+	position: relative;
+	top: -0.1em;
+}
+
+sub {
+	font-size: 70%;
+	vertical-align: bottom;
+	position: relative;
+	top: -0.1em;
+}
 
 
-// ul {
-//     list-style-type: square;
-//      @include marginSameLR($side-margin * 1.5);
-// }
-
-// ol {
-//     list-style-type: decimal;
-//      @include marginSameLR($side-margin * 1.5);
-// }
-
-// dt {
-//      @include marginSameLR($side-margin * 0.5);
-//     margin-top: 0.4em;
-// }
-
-// dd {
-//      @include marginSameLR($side-margin);
-// }
-
-// li {
-//     margin-top: 0.4em;
-// }
 
 // caption {
 //     font-size			: $font-size-base;
@@ -161,11 +184,6 @@ figcaption {
 
 // main {
 //     display: block;
-// }
-
-// img {
-//     max-width: 100%;
-//     height: auto;
 // }
 
 // em {
@@ -180,11 +198,6 @@ figcaption {
 //     white-space: pre-wrap ;
 // }
 
-// blockquote {
-//     @include marginSameLR(0.1em);
-//     padding: 0.1em 0.5em 0.5em 0.5em;
-//     font-style: italic;
-// }
 
 // code {
 //     @include marginSameLR(0.1em);
@@ -192,19 +205,6 @@ figcaption {
 //     padding-right: 0.2em;
 // }
 
-// sup {
-// 	font-size: 70%;
-// 	vertical-align: top;
-// 	position: relative;
-// 	top: -0.1em;
-// }
-
-// sub {
-// 	font-size: 70%;
-// 	vertical-align: bottom;
-// 	position: relative;
-// 	top: -0.1em;
-// }
 // aside {
 //     padding:0.5em 0.8em;
 // }

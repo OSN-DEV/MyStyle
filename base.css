@@ -122,18 +122,52 @@ h4 {
   font-weight: bold;
   font-size: 1.316em;
   margin-top: 1.6em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 h5 {
   font-weight: bold;
   font-size: 1.128em;
   margin-top: 1.6em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 h6 {
   font-weight: bold;
   font-size: 1.034em;
   margin-top: 1.6em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+}
+
+table {
+  border-collapse: collapse;
+}
+table caption {
+  color: #BDBDBD;
+}
+table th, table td {
+  border: solid 1px #E0E0E0;
+  padding: 0.2em 0.5em;
+}
+table th {
+  background-color: #EEEEEE;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-top: 0.4em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 dt {
@@ -156,7 +190,7 @@ strong {
   font-weight: bold;
 }
 
-code {
+code, kbd {
   margin-left: 0.1em;
   margin-right: 0.1em;
   padding-left: 0.2em;
@@ -173,17 +207,66 @@ img {
   height: auto;
 }
 
+hr {
+  margin-top: 1em;
+  border: none;
+}
 
+blockquote {
+  margin-left: 2.4em;
+  margin-right: 2.4em;
+  padding: 0.1em 0.5em 0.5em 0.5em;
+  font-style: italic;
+  color: #666666;
+}
+
+sup {
+  font-size: 70%;
+  vertical-align: top;
+  position: relative;
+  top: -0.1em;
+}
+
+sub {
+  font-size: 70%;
+  vertical-align: bottom;
+  position: relative;
+  top: -0.1em;
+}
 
 body > section:first-child,
 body > section:first-child > h1:first-child,
-body > section > h2:first-child,
-body > section > h3:first-child {
+body > section > h2:first-child {
   margin-top: 0;
+}
+
+body > section > header > h1 {
+  margin-top: 0;
+}
+
+section + section {
+  margin-top: 2em;
+}
+
+body > section > h3:first-child {
+  margin-top: 0.8em;
+}
+
+h1 + *, h2 + *, h3 + * {
+  margin-top: 0.8em;
+}
+
+h4 + *, h5 + *, h6 + * {
+  margin-top: 0.3em;
 }
 
 dd > p:first-child {
   margin-top: 0;
+}
+
+li > p {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 pre samp, pre code {
@@ -192,6 +275,7 @@ pre samp, pre code {
   padding: 1em 1em;
   overflow-x: auto;
   overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 pre samp {
   background-color: #333333;
@@ -199,6 +283,19 @@ pre samp {
 }
 pre code {
   background-color: #33333333;
+}
+
+dd > p:first-child {
+  margin-top: 0;
+}
+
+p + ul, ol {
+  margin-top: 0.4em;
+}
+
+li ol, li ul, li dl {
+  margin-top: 0;
+  margin-bottom: 0.8em;
 }
 
 .bold {
@@ -318,8 +415,29 @@ pre code {
   width: 90%;
 }
 
+.comment {
+  color: #4CAF50;
+}
+
+.lst-no-mark {
+  list-style-type: none;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.lst-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lst-lower-roman {
+  list-style-type: lower-roman;
+}
+
+.lst-zero-decimal {
+  list-style-type: decimal-leading-zero;
+}
+
 .note, .caution, .tip, .warn {
-  background-color: #E1F5FE;
   padding: 1em;
   margin-top: 1.6em;
 }
@@ -329,41 +447,47 @@ pre code {
 .note h5, .caution h5, .tip h5, .warn h5 {
   font-size: 11pt;
   margin-top: 1em;
+  margin-left: 0;
+  margin-right: 0;
 }
 .note h5 + p, .caution h5 + p, .tip h5 + p, .warn h5 + p {
   margin-top: 0.3em;
+  margin-left: 0;
+  margin-right: 0;
 }
 .note p, .caution p, .tip p, .warn p {
   margin-top: 0.5em;
 }
-.note code, .caution code, .tip code, .warn code {
-  background-color: #F3F8FE;
+.note ul, .note div, .caution ul, .caution div, .tip ul, .tip div, .warn ul, .warn div {
+  margin-left: 0;
 }
-.note a, .caution a, .tip a, .warn a {
-  font-weight: bold;
+.note ul.lst-no-mark li, .caution ul.lst-no-mark li, .tip ul.lst-no-mark li, .warn ul.lst-no-mark li {
+  margin-left: 0;
 }
 
 .note {
-  background-color: #E1F5FE;
+  background-color: #EEF9FD;
   color: #01579B;
 }
-.note p, .note h5, .note li {
-  color: #01579B;
+.note code, .note kbd {
+  color: #E31171;
+  background-color: #D8F2FA;
 }
 
 .tip {
   background-color: rgba(0, 164, 0, 0.15);
   color: #003100;
 }
+.tip code, .tip kbd {
+  color: #E31171;
+  background-color: #C4E9C4;
+}
 
 .warn {
   background-color: #FFF8E6;
-  color: #003100;
-}
-.warn p, .warn h5, .warn li {
   color: #4D3800;
 }
-.warn code {
+.warn code, .warn kbd {
   background-color: #FFEFC4;
 }
 
@@ -371,10 +495,11 @@ pre code {
   background-color: #FEEFE3;
   color: #BF360C;
 }
-.caution p, .caution h5, .caution li {
-  color: #BF360C;
+.caution code, .caution kbd {
+  background-color: #FED0D2;
 }
 
-.comment {
-  color: #4CAF50;
+.long-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }

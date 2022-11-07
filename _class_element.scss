@@ -28,10 +28,6 @@
 .ml-20   { margin-left : 2em; }
 .ml-30   { margin-left : 3em; }
 
-// // text
-// .indent-000  { text-indent  : 0; }
-
-// div.line-spacer { height:0.5em;margin:0;}
 
 // --------------------------------------------------------------------------------
 // size
@@ -51,66 +47,6 @@
 
 
 
-// --------------------------------------------------------------------------------
-// guide
-// --------------------------------------------------------------------------------
-.note, .caution, .tip, .warn {
-    background-color: #E1F5FE;
-    padding: 1em;
-    margin-top: $margin-base;
-    > *:first-child {
-        margin-top: 0;
-    }
-    h5 {
-        font-size: 11pt;
-        margin-top: 1em;
-    }
-    h5 + p {
-        margin-top: 0.3em;
-    }
-    p {
-        margin-top: 0.5em;
-    }
-    code {
-        background-color: #F3F8FE;
-    }
-    a {
-        font-weight: bold;
-    }
-}
-
-
-.note {
-    background-color: #E1F5FE;
-    color: #01579B;
-    p, h5, li {
-        color: #01579B;
-    }
-}
-.tip {
-    background-color : rgba(0,164,0,.15);
-    color: #003100;
-}
-.warn {
-    background-color : #FFF8E6;
-    color: #003100;
-    p, h5, li {
-        color: #4D3800
-    }
-    code {
-        background-color: #FFEFC4;
-    }
-}
-.caution {
-    background-color : #FEEFE3;
-    color: #BF360C;
-    p, h5, li {
-        color: #BF360C;
-    }
-}
-
-
-
 
 
 // --------------------------------------------------------------------------------
@@ -123,78 +59,98 @@
 .comment { color : $mcd-color-green-500;}
 
 
-// // --------------------------------------------------------------------------------
-// // list
-// // --------------------------------------------------------------------------------
-// .lst-no-mark { 
-//     list-style-type: none;
-//     margin-left: $side-margin;
-//     margin-right: $side-margin;
-// }
-// .lst-alpha { list-style-type : lower-alpha; }
-// .lst-lower-roman { list-style-type : lower-roman; }
-// .lst-zero-decimal { list-style-type : decimal-leading-zero; }
-
-// // --------------------------------------------------------------------------------
-// // others
-// // --------------------------------------------------------------------------------
-// .note, .caution, .tips, .warn {
-//     background-color: #E1F5FE;
-//     padding: 1em;
-//     margin-top: $margin-base;
-//     > *:first-child {
-//         margin-top: 0;
-//     }
-//     h5 {
-//         font-size: 11pt;
-//         margin-top: 1em;
-//     }
-//     h5 + p {
-//         margin-top: 0.3em;
-//     }
-//     p {
-//         margin-top: 0.5em;
-//     }
-//     code {
-//         background-color: #F3F8FE;
-//     }
-//     a {
-//         font-weight: bold;
-//     }
-// }
+// --------------------------------------------------------------------------------
+// list
+// --------------------------------------------------------------------------------
+.lst-no-mark { 
+    list-style-type: none;
+    margin-left: $side-margin * 1;
+    margin-right: $side-margin * 1;
+}
+.lst-alpha { list-style-type : lower-alpha; }
+.lst-lower-roman { list-style-type : lower-roman; }
+.lst-zero-decimal { list-style-type : decimal-leading-zero; }
 
 
-// .note {
-//     background-color: #E1F5FE;
-//     color: #01579B;
-//     p, h5, li {
-//         color: #01579B;
-//     }
-// }
-// .caution {
-//     background-color : #FEEFE3;
-//     color: #BF360C;
-//     p, h5, li {
-//         color: #BF360C;
-//     }
-// }
-// .tips {
-//     background-color : rgba(0,164,0,.15);
-//     color: #003100;
-//     p, h5, li {
-//         color: #003100;
-//     }
-// }
-// .warn {
-//     background-color : #FFF8E6;
-//     color: #003100;
-//     p, h5, li {
-//         color: #4D3800
-//     }
-//     code {
-//         background-color: #FFEFC4;
-//     }
-// }
+// --------------------------------------------------------------------------------
+// guide
+// --------------------------------------------------------------------------------
+.note, .caution, .tip, .warn {
+    padding: 1em;
+    margin-top: $margin-base;
+    > *:first-child {
+      margin-top: 0;
+    }
+    h5 {
+      font-size: 11pt;
+      margin-top: 1em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    h5 + p {
+      margin-top: 0.3em;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    p {
+      margin-top: 0.5em;
+    }
+    ul, div {
+      margin-left: 0;
+    }
+    ul.lst-no-mark li{
+      margin-left: 0;
+    }
+}
+
+.note {
+    background-color: #EEF9FD;
+    color: #01579B;
+    code, kbd {
+      color: #E31171;
+      background-color: #D8F2FA;
+    }
+}
+
+.tip {
+    background-color : rgba(0,164,0,.15);
+    color: #003100;
+    code, kbd {
+      color: #E31171;
+      background-color: #C4E9C4;
+    }
+}
+
+.warn {
+    background-color : #FFF8E6;
+    color: #4D3800;
+    code, kbd {
+      background-color: #FFEFC4;
+    }
+}
+
+.caution {
+    background-color : #FEEFE3;
+    color: #BF360C;
+    code, kbd {
+      background-color: #FED0D2;
+    }
+}
+
+
+
+// --------------------------------------------------------------------------------
+// others
+// --------------------------------------------------------------------------------
+.long-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+
+
+
+
 
 
 // div.link-box {
