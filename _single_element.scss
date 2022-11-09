@@ -17,19 +17,19 @@ time, mark, audio, video
 */
 
 @mixin marginLR($l:-1, $r:-1) {
-    margin-left: $l;
-    margin-right: $r;
+  margin-left: $l;
+  margin-right: $r;
 }
 
 @mixin marginSameLR($margin) {
-    margin-left: $margin;
-    margin-right: $margin;
+  margin-left: $margin;
+  margin-right: $margin;
 }
 
 @mixin header($fontSize:1, $marginTop:1) {
-	font-weight			: bold;
-	font-size			: $font-size-base * $fontSize;
-	margin-top			: $margin-base * $marginTop;
+  font-weight     : bold;
+  font-size       : $font-size-base * $fontSize;
+  margin-top      : $margin-base * $marginTop;
 }
 
 body {
@@ -76,7 +76,7 @@ h3 {
 
 h4 {
   @include header(1.4, 1); 
-  @include marginSameLR($side-margin * 0.8);
+    @include marginSameLR($side-margin * 0.8);
 }
 
 h5 {
@@ -86,21 +86,24 @@ h5 {
 
 h6 {
   @include header(1.1, 1); 
-  @include marginSameLR($side-margin * 0.8);
+    @include marginSameLR($side-margin * 0.8);
 }
 
 table {
-    border-collapse: collapse;
-    caption {
-        color: #BDBDBD;
-    }
-    th, td {
-        border: solid 1px #E0E0E0;
-        padding: 0.2em 0.5em;
-    }
-    th {
-        background-color: #EEEEEE;
-    }
+  max-width: 95%;
+  margin-left: auto;
+  margin-right:auto;
+  border-collapse: collapse;
+  caption {
+    color: #BDBDBD;
+  }
+  th, td {
+    border: solid 1px #E0E0E0;
+    padding: 0.2em 0.5em;
+  }
+  th {
+    background-color: #EEEEEE;
+  }
 }
 
 ul {

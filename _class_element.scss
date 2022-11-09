@@ -45,10 +45,6 @@
 
 
 
-
-
-
-
 // --------------------------------------------------------------------------------
 // colors
 // --------------------------------------------------------------------------------
@@ -63,9 +59,9 @@
 // list
 // --------------------------------------------------------------------------------
 .lst-no-mark { 
-    list-style-type: none;
-    margin-left: $side-margin * 1;
-    margin-right: $side-margin * 1;
+  list-style-type: none;
+  margin-left: $side-margin * 1;
+  margin-right: $side-margin * 1;
 }
 .lst-alpha { list-style-type : lower-alpha; }
 .lst-lower-roman { list-style-type : lower-roman; }
@@ -76,65 +72,65 @@
 // guide
 // --------------------------------------------------------------------------------
 .note, .caution, .tip, .warn {
-    padding: 1em;
-    margin-top: $margin-base;
-    > *:first-child {
-      margin-top: 0;
-    }
-    h5 {
-      font-size: 11pt;
-      margin-top: 1em;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    h5 + p {
-      margin-top: 0.3em;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    p {
-      margin-top: 0.5em;
-    }
-    ul, div {
-      margin-left: 0;
-    }
-    ul.lst-no-mark li{
-      margin-left: 0;
-    }
+  padding: 1em;
+  margin-top: $margin-base;
+  > *:first-child {
+    margin-top: 0;
+  }
+  h5 {
+    font-size: 11pt;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h5 + p {
+    margin-top: 0.3em;
+  }
+  p {
+    margin-top: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  ul, div {
+    margin-left: 0;
+  }
+  ul.lst-no-mark li{
+    margin-left: 0;
+  }
 }
 
 .note {
-    background-color: #EEF9FD;
-    color: #01579B;
-    code, kbd {
-      color: #E31171;
-      background-color: #D8F2FA;
-    }
+  background-color: #EEF9FD;
+  color: #01579B;
+  code, kbd {
+    color: #E31171;
+    background-color: #D8F2FA;
+  }
 }
 
 .tip {
-    background-color : rgba(0,164,0,.15);
-    color: #003100;
-    code, kbd {
-      color: #E31171;
-      background-color: #C4E9C4;
-    }
+  background-color : rgba(0,164,0,.15);
+  color: #003100;
+  code, kbd {
+    color: #E31171;
+    background-color: #C4E9C4;
+  }
 }
 
 .warn {
-    background-color : #FFF8E6;
-    color: #4D3800;
-    code, kbd {
-      background-color: #FFEFC4;
-    }
+  background-color : #FFF8E6;
+  color: #4D3800;
+  code, kbd {
+    background-color: #FFEFC4;
+  }
 }
 
 .caution {
-    background-color : #FEEFE3;
-    color: #BF360C;
-    code, kbd {
-      background-color: #FED0D2;
-    }
+  background-color : #FEEFE3;
+  color: #BF360C;
+  code, kbd {
+    background-color: #FED0D2;
+  }
 }
 
 

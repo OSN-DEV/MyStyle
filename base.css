@@ -143,6 +143,9 @@ h6 {
 }
 
 table {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   border-collapse: collapse;
 }
 table caption {
@@ -452,11 +455,11 @@ li ol, li ul, li dl {
 }
 .note h5 + p, .caution h5 + p, .tip h5 + p, .warn h5 + p {
   margin-top: 0.3em;
-  margin-left: 0;
-  margin-right: 0;
 }
 .note p, .caution p, .tip p, .warn p {
   margin-top: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
 }
 .note ul, .note div, .caution ul, .caution div, .tip ul, .tip div, .warn ul, .warn div {
   margin-left: 0;
