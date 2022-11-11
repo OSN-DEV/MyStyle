@@ -78,8 +78,8 @@ body {
 
 p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
   margin-top: 1em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 section {
@@ -93,8 +93,8 @@ h1 {
   font-weight: bold;
   font-size: 1.88em;
   margin-top: 1.76em;
-  margin-left: 0em;
-  margin-right: 0em;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 h2 {
@@ -104,8 +104,8 @@ h2 {
   line-height: 1.28em;
   background-color: #4fb3bf;
   padding: 10px 20px;
-  margin-left: 0em;
-  margin-right: 0em;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 h3 {
@@ -122,24 +122,24 @@ h4 {
   font-weight: bold;
   font-size: 1.316em;
   margin-top: 1.6em;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 h5 {
   font-weight: bold;
   font-size: 1.128em;
   margin-top: 1.6em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h6 {
   font-weight: bold;
   font-size: 1.034em;
   margin-top: 1.6em;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 table {
@@ -169,20 +169,20 @@ ol {
 
 li {
   margin-top: 0.4em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 dt {
   font-weight: 600;
-  margin-left: 0.75em;
-  margin-right: 0.75em;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 0.4em;
 }
 
 dd {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 em {
@@ -216,8 +216,8 @@ hr {
 }
 
 blockquote {
-  margin-left: 2.4em;
-  margin-right: 2.4em;
+  margin-left: 32px;
+  margin-right: 32px;
   padding: 0.1em 0.5em 0.5em 0.5em;
   font-style: italic;
   color: #666666;
@@ -267,7 +267,7 @@ dd > p:first-child {
   margin-top: 0;
 }
 
-li > p {
+li > p, li > div, li > pre {
   margin-left: 0;
   margin-right: 0;
 }
@@ -424,8 +424,8 @@ li ol, li ul, li dl {
 
 .lst-no-mark {
   list-style-type: none;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .lst-alpha {

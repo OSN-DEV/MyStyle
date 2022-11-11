@@ -37,7 +37,7 @@ dd > p:first-child {
   margin-top: 0;
 }
 
-li > p {
+li > p, li > div, li >pre {
   margin-left: 0;
   margin-right: 0;
 

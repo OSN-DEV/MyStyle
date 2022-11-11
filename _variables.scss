@@ -14,7 +14,8 @@ $font-size-base			  : 0.94em;	// ニュース系は16px、ブログ系は14pxが
 $letter-spacing-base	: 0.07em;	// 文字の半分から１文字分の間
 $line-height-base		  : 1.6em;	// フォントサイズの1.5倍が目安
 $margin-base			    : $line-height-base;
-$side-margin			    : 1.5em;
+//$side-margin			    : 1.5em;
+$side-margin			    : 20px;
 $top-margin				    : 1em;      // Tag間のマージン
 
 // --------------------------------------------------------------------------------
