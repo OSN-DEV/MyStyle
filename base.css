@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -72,11 +73,11 @@ body {
   font-family: 'Segoe UI', 'Meiryo UI', serif-ja, serif;
   font-size: 0.94em;
   letter-spacing: 0.07em;
-  line-height: 1.6em;
-  margin-bottom: 1.6em;
+  line-height: 1.7em;
+  margin-bottom: 1.7em;
 }
 
-p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
+p, pre, ul, ol, dl, table, div, blockquote, figure {
   margin-top: 1em;
   margin-left: 20px;
   margin-right: 20px;
@@ -92,7 +93,7 @@ h1 {
   padding: 12px 20px;
   font-weight: bold;
   font-size: 1.88em;
-  margin-top: 1.76em;
+  margin-top: 1.87em;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -100,8 +101,8 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 1.598em;
-  margin-top: 1.6em;
-  line-height: 1.28em;
+  margin-top: 1.7em;
+  line-height: 1.36em;
   background-color: #4fb3bf;
   padding: 10px 20px;
   margin-left: 0px;
@@ -111,8 +112,8 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 1.41em;
-  margin-top: 1.6em;
-  line-height: 1.28em;
+  margin-top: 1.7em;
+  line-height: 1.36em;
   color: #00838f;
   padding-left: 20px;
   padding-right: 20px;
@@ -121,7 +122,7 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 1.316em;
-  margin-top: 1.6em;
+  margin-top: 1.7em;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -129,7 +130,7 @@ h4 {
 h5 {
   font-weight: bold;
   font-size: 1.128em;
-  margin-top: 1.6em;
+  margin-top: 1.7em;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -137,9 +138,9 @@ h5 {
 h6 {
   font-weight: bold;
   font-size: 1.034em;
-  margin-top: 1.6em;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: 1.7em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 table {
@@ -267,6 +268,11 @@ dd > p:first-child {
   margin-top: 0;
 }
 
+dd > p, dd > pre {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 li > p, li > div, li > pre {
   margin-left: 0;
   margin-right: 0;
@@ -298,7 +304,7 @@ p + ul, ol {
 
 li ol, li ul, li dl {
   margin-top: 0;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.85em;
 }
 
 .bold {
@@ -328,6 +334,26 @@ li ol, li ul, li dl {
 
 .underline {
   text-decoration: underline;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+table.nowrap-col1 td:nth-of-type(1), table.nowrap-col1 th:nth-of-type(1) {
+  white-space: nowrap;
+}
+
+table.nowrap-col2 td:nth-of-type(2), table.nowrap-col2 th:nth-of-type(2) {
+  white-space: nowrap;
+}
+
+table.nowrap-col3 td:nth-of-type(3), table.nowrap-col3 th:nth-of-type(3) {
+  white-space: nowrap;
+}
+
+table.nowrap-col4 td:nth-of-type(4), table.nowrap-col4 th:nth-of-type(4) {
+  white-space: nowrap;
 }
 
 .mt-00 {
@@ -424,8 +450,14 @@ li ol, li ul, li dl {
 
 .lst-no-mark {
   list-style-type: none;
-  margin-left: 20px;
-  margin-right: 20px;
+}
+
+.no-mark {
+  list-style-type: none;
+}
+.no-mark li {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .lst-alpha {
@@ -442,10 +474,14 @@ li ol, li ul, li dl {
 
 .note, .caution, .tip, .warn {
   padding: 1em;
-  margin-top: 1.6em;
+  margin-top: 1.7em;
 }
 .note > *:first-child, .caution > *:first-child, .tip > *:first-child, .warn > *:first-child {
   margin-top: 0;
+}
+.note pre, .caution pre, .tip pre, .warn pre {
+  margin-left: 0;
+  margin-right: 0;
 }
 .note h5, .caution h5, .tip h5, .warn h5 {
   font-size: 11pt;
@@ -476,6 +512,9 @@ li ol, li ul, li dl {
   color: #E31171;
   background-color: #D8F2FA;
 }
+.note pre > code {
+  color: #01579B;
+}
 
 .tip {
   background-color: rgba(0, 164, 0, 0.15);
@@ -485,6 +524,9 @@ li ol, li ul, li dl {
   color: #E31171;
   background-color: #C4E9C4;
 }
+.tip pre > code {
+  color: #003100;
+}
 
 .warn {
   background-color: #FFF8E6;
@@ -492,6 +534,9 @@ li ol, li ul, li dl {
 }
 .warn code, .warn kbd {
   background-color: #FFEFC4;
+}
+.warn pre > code {
+  color: #4D3800;
 }
 
 .caution {
@@ -501,8 +546,18 @@ li ol, li ul, li dl {
 .caution code, .caution kbd {
   background-color: #FED0D2;
 }
+.caution pre > code {
+  color: #BF360C;
+}
 
 .long-text {
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.link-box {
+  padding: 0.5em 1em;
+  background: #f0f7ff;
+  border: dashed 2px #5b8bd0;
+  /*点線*/
 }

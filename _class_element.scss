@@ -10,6 +10,29 @@
 .line-through { text-decoration : line-through;}
 .underline { text-decoration: underline;}
 
+.nowrap {white-space: nowrap;}
+table.nowrap-col1 {
+  td:nth-of-type(1), th:nth-of-type(1) {
+   white-space:nowrap; 
+  }
+}
+table.nowrap-col2 {
+  td:nth-of-type(2), th:nth-of-type(2) {
+   white-space:nowrap; 
+  }
+}
+
+table.nowrap-col3 {
+  td:nth-of-type(3), th:nth-of-type(3) {
+   white-space:nowrap; 
+  }
+}
+table.nowrap-col4 {
+  td:nth-of-type(4), th:nth-of-type(4) {
+   white-space:nowrap; 
+  }
+}
+
 // --------------------------------------------------------------------------------
 // space
 // --------------------------------------------------------------------------------
@@ -43,8 +66,6 @@
 .w-90   { width: 90%;}
 
 
-
-
 // --------------------------------------------------------------------------------
 // colors
 // --------------------------------------------------------------------------------
@@ -60,8 +81,16 @@
 // --------------------------------------------------------------------------------
 .lst-no-mark { 
   list-style-type: none;
-  margin-left: $side-margin * 1;
-  margin-right: $side-margin * 1;
+  // margin-left: $side-margin * 1;
+  // margin-right: $side-margin * 1;
+}
+
+.no-mark {
+  list-style-type: none;
+  li {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .lst-alpha { list-style-type : lower-alpha; }
 .lst-lower-roman { list-style-type : lower-roman; }
@@ -76,6 +105,10 @@
   margin-top: $margin-base;
   > *:first-child {
     margin-top: 0;
+  }
+  pre {
+    margin-left: 0;
+    margin-right: 0;
   }
   h5 {
     font-size: 11pt;
@@ -106,6 +139,9 @@
     color: #E31171;
     background-color: #D8F2FA;
   }
+  pre > code {
+    color: #01579B;
+  }
 }
 
 .tip {
@@ -115,6 +151,9 @@
     color: #E31171;
     background-color: #C4E9C4;
   }
+  pre > code {
+    color: #003100;
+  }
 }
 
 .warn {
@@ -123,6 +162,9 @@
   code, kbd {
     background-color: #FFEFC4;
   }
+  pre > code {
+    color: #4D3800;
+  }
 }
 
 .caution {
@@ -130,6 +172,9 @@
   color: #BF360C;
   code, kbd {
     background-color: #FED0D2;
+  }
+  pre > code {
+    color: #BF360C;
   }
 }
 
@@ -143,23 +188,8 @@
   word-wrap: break-word;
 }
 
-
-
-
-
-
-
-// div.link-box {
-//     background-color: $mcd-color-gray-100;
-//     border  : solid 1px #999999;
-//     margin-top : 1em;
-//     margin-left: 1em;
-//     margin-right: 1em;
-//     padding : 0.5em 1em;
-// }
-
-// .break-word {
-//     word-wrap: break-word;
-// }
-
-
+.link-box {
+    padding: 0.5em 1em;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;/*点線*/
+}

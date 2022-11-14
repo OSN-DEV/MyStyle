@@ -41,7 +41,7 @@ body {
   margin-bottom   : $margin-base;
 }
 
-p, pre, ul, ol, dl, table, div, blockquote, figure, aside {
+p, pre, ul, ol, dl, table, div, blockquote, figure {
   margin-top: $top-margin;
   @include marginSameLR($side-margin);
 }
@@ -86,7 +86,7 @@ h5 {
 
 h6 {
   @include header(1.1, 1); 
-    @include marginSameLR($side-margin * 0.8);
+    @include marginSameLR($side-margin);
 }
 
 table {
@@ -108,10 +108,12 @@ table {
 
 ul {
   list-style-type: square;
+  // padding-left: 1em;
 }
 
 ol {
   list-style-type: decimal;
+  // padding-left: 1em;
 }
 
 li {
