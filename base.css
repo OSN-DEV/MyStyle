@@ -91,6 +91,7 @@ h1 {
   color: #ffffff;
   background-color: #00838f;
   padding: 12px 20px;
+  line-height: 1.3em;
   font-weight: bold;
   font-size: 1.88em;
   margin-top: 1.87em;
@@ -123,8 +124,8 @@ h4 {
   font-weight: bold;
   font-size: 1.316em;
   margin-top: 1.7em;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h5 {
@@ -158,6 +159,10 @@ table th, table td {
 }
 table th {
   background-color: #EEEEEE;
+}
+
+ul, ol {
+  margin-left: 2em;
 }
 
 ul {
@@ -213,7 +218,9 @@ img {
 
 hr {
   margin-top: 1em;
-  border: none;
+  border: solid 1px #eeeeee;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 blockquote {
@@ -238,13 +245,7 @@ sub {
   top: -0.1em;
 }
 
-body > section:first-child,
-body > section:first-child > h1:first-child,
-body > section > h2:first-child {
-  margin-top: 0;
-}
-
-body > section > header > h1 {
+body > section:first-child > h1:first-child, body > section:first-child > h2:first-child {
   margin-top: 0;
 }
 
@@ -258,6 +259,10 @@ body > section > h3:first-child {
 
 h1 + *, h2 + *, h3 + * {
   margin-top: 0.8em;
+}
+
+h1 + h2 {
+  background-color: transparent;
 }
 
 h4 + *, h5 + *, h6 + * {
@@ -305,6 +310,18 @@ p + ul, ol {
 li ol, li ul, li dl {
   margin-top: 0;
   margin-bottom: 0.85em;
+}
+
+aside table {
+  margin-left: 1.7em;
+  border: none;
+  border-collapse: unset;
+  font-size: 0.846em;
+  color: #546E7A;
+}
+aside table th, aside table td {
+  background-color: transparent;
+  border: none;
 }
 
 .bold {
@@ -450,6 +467,18 @@ table.nowrap-col4 td:nth-of-type(4), table.nowrap-col4 th:nth-of-type(4) {
 
 .lst-no-mark {
   list-style-type: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.lst-kome {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+.lst-kome li::before {
+  content: '※';
+  margin-left: -1em;
 }
 
 .no-mark {

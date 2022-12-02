@@ -54,6 +54,7 @@ h1 {
   color: $color-primary-fg;
   background-color: $color-primary-bg;
   padding: 12px 20px;
+  line-height: 1.3em;
   @include header(2, 1.1);
   @include marginSameLR($side-margin * (0));
 }
@@ -76,7 +77,7 @@ h3 {
 
 h4 {
   @include header(1.4, 1); 
-    @include marginSameLR($side-margin * 0.8);
+    @include marginSameLR($side-margin * 1);
 }
 
 h5 {
@@ -104,6 +105,10 @@ table {
   th {
     background-color: #EEEEEE;
   }
+}
+
+ul, ol {
+  margin-left: 2em;
 }
 
 ul {
@@ -157,7 +162,9 @@ img {
 
 hr {
   margin-top: 1em;
-  border: none;
+//  border: none;
+  border: solid 1px #eeeeee;
+  @include marginSameLR($side-margin);
 }
 
 blockquote {

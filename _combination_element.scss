@@ -4,18 +4,11 @@
 // tag1>tag2 子まで適用
 // tag1+tag2 同じ階層の隣接するタグのみ
 
-body > section:first-child,
-body > section:first-child > h1:first-child,
-body > section > h2:first-child {
-  margin-top  : 0;
+body > section:first-child {
+  > h1:first-child, > h2:first-child {
+    margin-top: 0;
+  }
 }
-
-body > section > header > h1 {
-  margin-top  : 0;
-}
-
-
-
 
 section + section {
   margin-top  : $top-margin * 2;
@@ -27,6 +20,10 @@ body > section > h3:first-child {
 
 h1+*, h2+*, h3+*{
     margin-top: $top-margin * 0.8;
+}
+
+h1 + h2 {
+  background-color: transparent;
 }
 
 h4+*, h5+*, h6+* {
@@ -79,6 +76,31 @@ li ol, li ul, li dl {
 	margin-bottom		: $margin-base / 2;
 }
 
+aside {
+  table {
+    margin-left: $margin-base;
+    border: none;
+    border-collapse:unset;
+    font-size			: $font-size-base * 0.9;
+    color:$mcd-color-blue-gray-600;
+    th, td {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+// aside > *:first-child {
+//     margin-top:0em;
+// }
+
+
+
+
+
+
+
+
 // body > *:first-child {
 //   margin-top  : 1em;
 // }
@@ -117,23 +139,6 @@ li ol, li ul, li dl {
 
 
 
-
-// aside {
-//     table {
-//         border: none;
-//         border-collapse:unset;
-//         font-size			: $font-size-base * 0.9;
-//         color:$mcd-color-blue-gray-600;
-//         th, td {
-//             background-color: transparent;
-//             border: none;
-//         }
-//     }
-// }
-
-// aside > *:first-child {
-//     margin-top:0em;
-// }
 
 // blockquote > *:first-child {
 //     margin-top:0.5em;

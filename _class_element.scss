@@ -81,8 +81,23 @@ table.nowrap-col4 {
 // --------------------------------------------------------------------------------
 .lst-no-mark { 
   list-style-type: none;
-  // margin-left: $side-margin * 1;
-  // margin-right: $side-margin * 1;
+  margin-left: $side-margin * 0;
+  margin-right: $side-margin * 0;
+}
+// .lst-kome {
+//   list-style-type: none;
+//   li::before {
+//     content: '※';
+//   }
+// }
+.lst-kome { 
+  list-style-type: none;
+  margin-left: $side-margin * 1;
+  margin-right: $side-margin * 0;
+  li::before {
+    content: '※';
+    margin-left: -1em;
+  }
 }
 
 .no-mark {
