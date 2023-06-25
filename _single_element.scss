@@ -162,8 +162,7 @@ img {
 
 hr {
   margin-top: 1em;
-//  border: none;
-  border: solid 1px #eeeeee;
+  border: none;
   @include marginSameLR($side-margin);
 }
 

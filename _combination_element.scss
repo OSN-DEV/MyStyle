@@ -14,7 +14,8 @@ section + section {
   margin-top  : $top-margin * 2;
 }
 
-body > section > h3:first-child {
+body > section 
+  > h3:first-child, h4:first-child {
   margin-top  : $top-margin * 0.8;
 }
 
@@ -24,6 +25,11 @@ h1+*, h2+*, h3+*{
 
 h1 + h2 {
   background-color: transparent;
+  margin-top: $top-margin * 0.3;
+}
+
+h1 + h2 + h3 {
+  margin-top: $top-margin * 0.3;
 }
 
 h4+*, h5+*, h6+* {
@@ -67,7 +73,7 @@ dd > p:first-child {
 }
 
 p + ul,ol {
-    margin-top: $top-margin * 0.4;
+    margin-top: $top-margin * 0.6;
 }
 
 

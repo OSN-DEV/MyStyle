@@ -218,7 +218,7 @@ img {
 
 hr {
   margin-top: 1em;
-  border: solid 1px #eeeeee;
+  border: none;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -253,7 +253,8 @@ section + section {
   margin-top: 2em;
 }
 
-body > section > h3:first-child {
+body > section
+> h3:first-child, h4:first-child {
   margin-top: 0.8em;
 }
 
@@ -263,6 +264,11 @@ h1 + *, h2 + *, h3 + * {
 
 h1 + h2 {
   background-color: transparent;
+  margin-top: 0.3em;
+}
+
+h1 + h2 + h3 {
+  margin-top: 0.3em;
 }
 
 h4 + *, h5 + *, h6 + * {
@@ -304,7 +310,7 @@ dd > p:first-child {
 }
 
 p + ul, ol {
-  margin-top: 0.4em;
+  margin-top: 0.6em;
 }
 
 li ol, li ul, li dl {
@@ -465,9 +471,13 @@ table.nowrap-col4 td:nth-of-type(4), table.nowrap-col4 th:nth-of-type(4) {
   color: #4CAF50;
 }
 
+.border-light-gray {
+  border: solid 1px #eeeeee;
+}
+
 .lst-no-mark {
   list-style-type: none;
-  margin-left: 0px;
+  margin-left: 12px;
   margin-right: 0px;
 }
 
@@ -512,7 +522,7 @@ table.nowrap-col4 td:nth-of-type(4), table.nowrap-col4 th:nth-of-type(4) {
   margin-left: 0;
   margin-right: 0;
 }
-.note h5, .caution h5, .tip h5, .warn h5 {
+.note h5, .note h6, .caution h5, .caution h6, .tip h5, .tip h6, .warn h5, .warn h6 {
   font-size: 11pt;
   margin-top: 1em;
   margin-left: 0;
@@ -543,6 +553,10 @@ table.nowrap-col4 td:nth-of-type(4), table.nowrap-col4 th:nth-of-type(4) {
 }
 .note pre > code {
   color: #01579B;
+}
+
+li > .note, li > .caution, li > .tip {
+  margin-top: 0.5em;
 }
 
 .tip {
@@ -586,7 +600,8 @@ table.nowrap-col4 td:nth-of-type(4), table.nowrap-col4 th:nth-of-type(4) {
 
 .link-box {
   padding: 0.5em 1em;
-  background: #f0f7ff;
-  border: dashed 2px #5b8bd0;
-  /*点線*/
+  background: #f1f1f1;
+  border: dashed 1px #7e7e7e;
 }
+
+/*# sourceMappingURL=base.css.map */

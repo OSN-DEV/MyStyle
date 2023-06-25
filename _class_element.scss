@@ -77,19 +77,19 @@ table.nowrap-col4 {
 
 
 // --------------------------------------------------------------------------------
+// border
+// --------------------------------------------------------------------------------
+.border-light-gray { border: solid 1px #eeeeee; }
+
+// --------------------------------------------------------------------------------
 // list
 // --------------------------------------------------------------------------------
 .lst-no-mark { 
   list-style-type: none;
-  margin-left: $side-margin * 0;
+  margin-left: $side-margin * 0.6;
   margin-right: $side-margin * 0;
 }
-// .lst-kome {
-//   list-style-type: none;
-//   li::before {
-//     content: '※';
-//   }
-// }
+
 .lst-kome { 
   list-style-type: none;
   margin-left: $side-margin * 1;
@@ -107,6 +107,7 @@ table.nowrap-col4 {
     margin-right: 0;
   }
 }
+
 .lst-alpha { list-style-type : lower-alpha; }
 .lst-lower-roman { list-style-type : lower-roman; }
 .lst-zero-decimal { list-style-type : decimal-leading-zero; }
@@ -125,7 +126,7 @@ table.nowrap-col4 {
     margin-left: 0;
     margin-right: 0;
   }
-  h5 {
+  h5, h6 {
     font-size: 11pt;
     margin-top: 1em;
     margin-left: 0;
@@ -157,6 +158,10 @@ table.nowrap-col4 {
   pre > code {
     color: #01579B;
   }
+}
+
+li > .note, li > .caution, li > .tip {
+  margin-top: 0.5em;
 }
 
 .tip {
@@ -204,7 +209,8 @@ table.nowrap-col4 {
 }
 
 .link-box {
-    padding: 0.5em 1em;
-    background: #f0f7ff;
-    border: dashed 2px #5b8bd0;/*点線*/
+  padding: 0.5em 1em;
+  background: #f1f1f1;
+  border: dashed 1px #7e7e7e;
 }
+
